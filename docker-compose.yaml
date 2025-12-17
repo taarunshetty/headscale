@@ -18,6 +18,17 @@ services:
           - headscale
           - headscale.technomancer.shop
 
+  headscale-admin:
+    image: goodieshq/headscale-admin:latest
+    container_name: headscale-admin
+    restart: unless-stopped
+    environment:
+      HEADSCALE_URL: "https://headscale.technomancer.shop"
+    networks:
+      headscale-net:
+        aliases:
+          - headscale-admin
+
 volumes:
   headscale-data:
 
