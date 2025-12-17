@@ -16,7 +16,7 @@ database:
     path: /var/lib/headscale/db.sqlite
 
 dns:
-  base_domain: technomancer.shop
+  base_domain: magic.technomancer.shop
   magic_dns: true
   override_local_dns: true
   nameservers:
