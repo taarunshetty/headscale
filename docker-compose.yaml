@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  headscale:
+    image: headscale/headscale:latest
+    container_name: headscale
+    restart: unless-stopped
+
+    command: headscale serve
+
+    volumes:
+      - headscale-data:/var/lib/headscale
+      - ./config:/etc/headscale
+
+    networks:
+      coolify:
+        aliases:
+          - headscale
+          - headscale.technomancer.shop
+
+volumes:
+  headscale-data:
+
+networks:
+  coolify:
+    external: true
