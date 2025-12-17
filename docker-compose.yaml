@@ -6,7 +6,7 @@ services:
     container_name: headscale
     restart: unless-stopped
 
-    command: headscale serve
+    command: serve
 
     volumes:
       - headscale-data:/var/lib/headscale
