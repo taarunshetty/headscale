@@ -17,12 +17,8 @@ services:
         aliases:
           - headscale
           - headscale.technomancer.shop
-  healthcheck:
-        test: ["CMD", "headscale", "health"]
-        interval: 30s
-        timeout: 5s
-        retries: 3
-        start_period: 10s
+    healthcheck:
+          test: ["CMD", "headscale", "health"]
 
   headscale-admin:
     image: goodieshq/headscale-admin:latest
