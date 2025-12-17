@@ -24,8 +24,9 @@ dns:
       - 1.1.1.1
       - 8.8.8.8
   
-ip_prefixes:
-  - 100.64.0.0/10
+prefixes:
+  v4: 100.64.0.0/10
+  v6: fd7a:115c:a1e0::/48
 
 log:
   level: info
