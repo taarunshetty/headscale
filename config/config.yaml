@@ -36,5 +36,6 @@ log:
   level: info
 
 policy:
+  mode: file
   path: /etc/headscale/acl.yaml
 
