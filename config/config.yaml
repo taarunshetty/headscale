@@ -34,3 +34,7 @@ derp:
 
 log:
   level: info
+
+policy:
+  path: /var/lib/headscale/acl.yaml
+
