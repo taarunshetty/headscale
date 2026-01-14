@@ -1,13 +1,13 @@
 {
     "groups": {
       "group:minecraft": [
-        "user:sudhanva", 
-        "user:samartha"
+        "sudhanva@", 
+        "samartha@"
       ]
     },
   
     "tagOwners": {
-      "tag:sentry": ["user:fool"]
+      "tag:sentry": ["fool@"]
     },
   
     "acls": [
@@ -16,13 +16,11 @@
         "src": ["group:minecraft"],
         "dst": ["tag:sentry:25565"]
       },
-  
       {
         "action": "accept",
-        "src": ["user:fool"],
+        "src": ["fool@"],
         "dst": ["tag:sentry:*"]
       },
-  
       {
         "action": "accept",
         "src": ["autogroup:member"],
