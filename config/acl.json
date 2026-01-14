@@ -1,17 +1,32 @@
 {
+    "groups": {
+      "group:minecraft": [
+        "user:sudhanva", 
+        "user:samartha"
+      ]
+    },
+  
     "tagOwners": {
       "tag:sentry": ["user:fool"]
     },
+  
     "acls": [
       {
         "action": "accept",
-        "src": ["user:sudhanva", "user:samartha"],
+        "src": ["group:minecraft"],
         "dst": ["tag:sentry:25565"]
       },
+  
       {
         "action": "accept",
         "src": ["user:fool"],
         "dst": ["tag:sentry:*"]
+      },
+  
+      {
+        "action": "accept",
+        "src": ["autogroup:member"],
+        "dst": ["autogroup:self:*"]
       }
     ]
   }
