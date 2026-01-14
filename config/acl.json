@@ -1,0 +1,17 @@
+{
+    "tagOwners": {
+      "tag:sentry": ["user:fool"]
+    },
+    "acls": [
+      {
+        "action": "accept",
+        "src": ["user:sudhanva", "user:samartha"],
+        "dst": ["tag:sentry:25565"]
+      },
+      {
+        "action": "accept",
+        "src": ["user:fool"],
+        "dst": ["tag:sentry:*"]
+      }
+    ]
+  }
