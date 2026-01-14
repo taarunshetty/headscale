@@ -24,7 +24,8 @@
       {
         "action": "accept",
         "src": ["*"],
-        "dst": ["*:icmp"]
+        "proto": "icmp",
+        "dst": ["*"]
       },
       {
         "action": "accept",
